@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stays & Accommodation — MATS Nepal</title>
+  <meta name="description" content="Find perfect hotels, lodges, and guesthouses across Nepal curated by MATS Nepal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a1628'/><text y='.9em' font-size='60' x='15' fill='%23c9a96e' font-family='Georgia'>M</text></svg>" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">M</div>
+      <div>
+        <div class="nav__logo-text">MATS Nepal</div>
+        <span class="nav__logo-sub">Travel &amp; Hospitality</span>
+      </div>
+    </a>
+    <ul class="nav__links">
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="bus.html">Transport</a></li>
+      <li><a href="stays.html">Stays</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="tours.html" class="nav__cta">Book Now</a></li>
+    </ul>
+    <div class="nav__hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="nav__mobile">
+  <button class="nav__mobile-close" aria-label="Close">&#x2715;</button>
+  <a href="flights.html">Flights</a>
+  <a href="bus.html">Transport</a>
+  <a href="stays.html">Stays</a>
+  <a href="tours.html">Tours</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="tours.html" style="color:var(--accent);">Book Now &#8594;</a>
+</div>
+
+<div class="page-hero">
+  <span class="label" style="display:block;margin-bottom:0.75rem;">&#127968; Accommodation</span>
+  <h1 class="page-hero__title">Find Your Perfect Stay</h1>
+  <p class="page-hero__sub">Luxury hotels, cosy guesthouses, and mountain lodges &mdash; curated for every traveller.</p>
+</div>
+
+<section class="section" style="background:var(--off-white);">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;">
+      <div>
+        <span class="label">Our Properties</span>
+        <h2 class="section-title" style="color:var(--navy);margin-top:0.25rem;">Handpicked Stays Across Nepal</h2>
+      </div>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <button class="filter-btn tab-btn active" data-filter="all">All</button>
+        <button class="filter-btn tab-btn" data-filter="hotel">Hotels</button>
+        <button class="filter-btn tab-btn" data-filter="resort">Resorts</button>
+        <button class="filter-btn tab-btn" data-filter="lodge">Lodges</button>
+        <button class="filter-btn tab-btn" data-filter="guesthouse">Guesthouses</button>
+      </div>
+    </div>
+    <div class="stays-grid">
+      <div class="stay-card-wrap" data-type="hotel">
+      <a href="index.html#contact" class="stay-card">
+        <div class="stay-card__img">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Hotel Yak &amp; Yeti" loading="lazy" />
+          <div class="stay-card__badge">Hotel</div>
+        </div>
+        <div class="stay-card__body">
+          <div class="stay-card__location">Kathmandu</div>
+          <div class="stay-card__name">Hotel Yak &amp; Yeti</div>
+          <div class="stay-card__amenities">
+            <span class="stay-card__amenity">&#127968; Luxury</span>
+            <span class="stay-card__amenity">&#128197; Breakfast</span>
+            <span class="stay-card__amenity">&#128507; Free WiFi</span>
+          </div>
+          <div class="stay-card__footer">
+            <div class="stay-card__price">NPR 8,500 <span>/ night</span></div>
+            <div class="stay-card__rating">&#9733; 4.9</div>
+          </div>
+        </div>
+      </a>
+    </div><div class="stay-card-wrap" data-type="resort">
+      <a href="index.html#contact" class="stay-card">
+        <div class="stay-card__img">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="Fish Tail Lodge" loading="lazy" />
+          <div class="stay-card__badge">Resort</div>
+        </div>
+        <div class="stay-card__body">
+          <div class="stay-card__location">Pokhara</div>
+          <div class="stay-card__name">Fish Tail Lodge</div>
+          <div class="stay-card__amenities">
+            <span class="stay-card__amenity">&#127960; Pool</span>
+            <span class="stay-card__amenity">&#128197; All Meals</span>
+            <span class="stay-card__amenity">&#127947; Spa</span>
+          </div>
+          <div class="stay-card__footer">
+            <div class="stay-card__price">NPR 12,000 <span>/ night</span></div>
+            <div class="stay-card__rating">&#9733; 4.8</div>
+          </div>
+        </div>
+      </a>
+    </div><div class="stay-card-wrap" data-type="hotel">
+      <a href="index.html#contact" class="stay-card">
+        <div class="stay-card__img">
+          <img src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb37?w=600&q=80" alt="Kantipur Temple House" loading="lazy" />
+          <div class="stay-card__badge">Boutique</div>
+        </div>
+        <div class="stay-card__body">
+          <div class="stay-card__location">Thamel</div>
+          <div class="stay-card__name">Kantipur Temple House</div>
+          <div class="stay-card__amenities">
+            <span class="stay-card__amenity">&#127956; Garden</span>
+            <span class="stay-card__amenity">&#128197; Breakfast</span>
+            <span class="stay-card__amenity">&#128507; WiFi</span>
+          </div>
+          <div class="stay-card__footer">
+            <div class="stay-card__price">NPR 5,200 <span>/ night</span></div>
+            <div class="stay-card__rating">&#9733; 4.7</div>
+          </div>
+        </div>
+      </a>
+    </div><div class="stay-card-wrap" data-type="lodge">
+      <a href="index.html#contact" class="stay-card">
+        <div class="stay-card__img">
+          <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&q=80" alt="Everest Summit Lodge" loading="lazy" />
+          <div class="stay-card__badge">Lodge</div>
+        </div>
+        <div class="stay-card__body">
+          <div class="stay-card__location">Namche Bazaar</div>
+          <div class="stay-card__name">Everest Summit Lodge</div>
+          <div class="stay-card__amenities">
+            <span class="stay-card__amenity">&#127956; Mountain View</span>
+            <span class="stay-card__amenity">&#128555; Dorms</span>
+            <span class="stay-card__amenity">&#127861; Meals</span>
+          </div>
+          <div class="stay-card__footer">
+            <div class="stay-card__price">NPR 3,500 <span>/ night</span></div>
+            <div class="stay-card__rating">&#9733; 4.6</div>
+          </div>
+        </div>
+      </a>
+    </div><div class="stay-card-wrap" data-type="guesthouse">
+      <a href="index.html#contact" class="stay-card">
+        <div class="stay-card__img">
+          <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=600&q=80" alt="Moonlight Guesthouse" loading="lazy" />
+          <div class="stay-card__badge">Guesthouse</div>
+        </div>
+        <div class="stay-card__body">
+          <div class="stay-card__location">Lakeside, Pokhara</div>
+          <div class="stay-card__name">Moonlight Guesthouse</div>
+          <div class="stay-card__amenities">
+            <span class="stay-card__amenity">&#127468; Lake View</span>
+            <span class="stay-card__amenity">&#128507; WiFi</span>
+            <span class="stay-card__amenity">&#128197; Breakfast</span>
+          </div>
+          <div class="stay-card__footer">
+            <div class="stay-card__price">NPR 2,800 <span>/ night</span></div>
+            <div class="stay-card__rating">&#9733; 4.5</div>
+          </div>
+        </div>
+      </a>
+    </div><div class="stay-card-wrap" data-type="hotel">
+      <a href="index.html#contact" class="stay-card">
+        <div class="stay-card__img">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80" alt="Hyatt Regency Kathmandu" loading="lazy" />
+          <div class="stay-card__badge">Hotel</div>
+        </div>
+        <div class="stay-card__body">
+          <div class="stay-card__location">Patan</div>
+          <div class="stay-card__name">Hyatt Regency Kathmandu</div>
+          <div class="stay-card__amenities">
+            <span class="stay-card__amenity">&#127960; Pool</span>
+            <span class="stay-card__amenity">&#127947; Spa</span>
+            <span class="stay-card__amenity">&#128197; Buffet</span>
+          </div>
+          <div class="stay-card__footer">
+            <div class="stay-card__price">NPR 15,000 <span>/ night</span></div>
+            <div class="stay-card__rating">&#9733; 4.9</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <p style="color:var(--gray-600);margin-bottom:1rem;">Looking for something specific? We&apos;ll find the perfect property for you.</p>
+      <a href="https://wa.me/9779823356668" class="btn-primary" target="_blank" rel="noopener">&#128172; Chat with Us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__logo">
+        <div class="footer__logo-mark">M</div>
+        <div class="footer__logo-text">MATS Nepal</div>
+      </div>
+      <p class="footer__tagline">Maitri Apartment and Travel Services Pvt. Ltd. &mdash; Making every Nepal journey smooth, reliable, and worth repeating.</p>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="Instagram">&#128247;</a>
+        <a href="https://www.tiktok.com/@matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="TikTok">&#127925;</a>
+        <a href="https://www.youtube.com/@matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="YouTube">&#9654;</a>
+        <a href="https://www.linkedin.com/company/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer__col-title">Services</div>
+      <ul class="footer__links">
+        <li><a href="flights.html">Flights</a></li>
+        <li><a href="bus.html">Transport</a></li>
+        <li><a href="stays.html">Stays</a></li>
+        <li><a href="tours.html">Tours</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__col-title">Destinations</div>
+      <ul class="footer__links">
+        <li><a href="tours.html">Everest Base Camp</a></li>
+        <li><a href="tours.html">Pokhara</a></li>
+        <li><a href="tours.html">Kathmandu Valley</a></li>
+        <li><a href="tours.html">Lumbini</a></li>
+        <li><a href="tours.html">Annapurna Circuit</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__col-title">Contact</div>
+      <div class="footer__contact-item"><span>&#128222;</span><span>+977 985-100-7025</span></div>
+      <div class="footer__contact-item"><span>&#9993;&#65039;</span><span>info@mats.com.np</span></div>
+      <div class="footer__contact-item"><span>&#128205;</span><span>Mitrapark-7, Kathmandu</span></div>
+      <div class="footer__contact-item"><span>&#128336;</span><span>Sun&ndash;Fri, 9 AM &ndash; 6 PM</span></div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__bottom-inner">
+      <div class="footer__copyright">
+        &copy; <span class="js-year"></span> <strong>MATS Nepal</strong> &mdash; Maitri Apartment and Travel Services Pvt. Ltd. Made with &#10084;&#65039; by <strong>NP</strong>.
+      </div>
+      <div class="footer__bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="tours.html">Book Now</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/9779823356668" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="whatsapp-float__icon">&#128172;</span>
+  <span>WhatsApp Us</span>
+</a>
+<script src="js/main.js"></script>
+</body></html>

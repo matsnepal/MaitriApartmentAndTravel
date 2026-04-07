@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transport & Bus Booking — MATS Nepal</title>
+  <meta name="description" content="Book comfortable bus and transport services across Nepal with MATS Nepal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a1628'/><text y='.9em' font-size='60' x='15' fill='%23c9a96e' font-family='Georgia'>M</text></svg>" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">M</div>
+      <div>
+        <div class="nav__logo-text">MATS Nepal</div>
+        <span class="nav__logo-sub">Travel &amp; Hospitality</span>
+      </div>
+    </a>
+    <ul class="nav__links">
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="bus.html">Transport</a></li>
+      <li><a href="stays.html">Stays</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="tours.html" class="nav__cta">Book Now</a></li>
+    </ul>
+    <div class="nav__hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="nav__mobile">
+  <button class="nav__mobile-close" aria-label="Close">&#x2715;</button>
+  <a href="flights.html">Flights</a>
+  <a href="bus.html">Transport</a>
+  <a href="stays.html">Stays</a>
+  <a href="tours.html">Tours</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="tours.html" style="color:var(--accent);">Book Now &#8594;</a>
+</div>
+
+<div class="page-hero">
+  <span class="label" style="display:block;margin-bottom:0.75rem;">&#128652; Ground Transport</span>
+  <h1 class="page-hero__title">Transport &amp; Bus Booking</h1>
+  <p class="page-hero__sub">Comfortable, reliable bus services and private transport connecting Nepal&apos;s most beautiful destinations.</p>
+</div>
+
+<div class="booking-section">
+  <div class="booking-card">
+    <div class="booking-card__header">
+      <span class="booking-card__header-icon">&#128652;</span>
+      <div>
+        <div class="booking-card__header-title">Reserve Your Seat</div>
+        <div class="booking-card__header-sub">Tourist buses, express &amp; private vehicles</div>
+      </div>
+    </div>
+    <div class="booking-card__body">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="bus-tab">Bus / Coach</button>
+        <button class="tab-btn" data-tab="private-tab">Private Vehicle</button>
+      </div>
+      <form class="booking-form">
+        <div id="bus-tab" class="tab-panel">
+          <div class="form-row">
+            <div class="form-group"><label>From</label><select><option>Kathmandu</option><option>Pokhara</option><option>Chitwan</option><option>Lumbini</option><option>Biratnagar</option></select></div>
+            <div class="form-group"><label>To</label><select><option>Pokhara</option><option>Kathmandu</option><option>Chitwan</option><option>Lumbini</option><option>Biratnagar</option></select></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Travel Date</label><input type="date" /></div>
+            <div class="form-group"><label>No. of Seats</label><select><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Bus Type</label><select><option>Tourist Bus (AC)</option><option>Deluxe Coach</option><option>Night Bus (Sleeper)</option><option>Local Bus</option></select></div>
+            <div class="form-group"><label>Preferred Departure</label><select><option>Morning (6–9 AM)</option><option>Day (9 AM–12 PM)</option><option>Evening (4–7 PM)</option><option>Night (7 PM+)</option></select></div>
+          </div>
+        </div>
+        <div id="private-tab" class="tab-panel" style="display:none;">
+          <div class="form-row">
+            <div class="form-group"><label>Pickup Location</label><input type="text" placeholder="Hotel / Address in Kathmandu" /></div>
+            <div class="form-group"><label>Drop Location</label><input type="text" placeholder="Destination" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Date</label><input type="date" /></div>
+            <div class="form-group"><label>Pickup Time</label><input type="time" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Vehicle Type</label><select><option>Car / Sedan (1-4 pax)</option><option>SUV / Jeep (1-6 pax)</option><option>Minivan (5-12 pax)</option><option>Microbus (12-20 pax)</option><option>Bus (20+ pax)</option></select></div>
+            <div class="form-group"><label>No. of Passengers</label><input type="number" min="1" placeholder="e.g. 4" /></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your name" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" placeholder="+977 ..." required /></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" /></div>
+        </div>
+        <button type="submit" class="booking-submit">Request Transport</button>
+      </form>
+    </div>
+  </div>
+
+  <div style="max-width:900px;margin:3rem auto 0;">
+    <h2 style="font-family:var(--font-display);font-size:1.5rem;color:var(--navy);margin-bottom:1.5rem;">Popular Routes</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+      <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--navy);">Kathmandu &#8594; Pokhara</div>
+        <div style="font-size:0.8rem;color:var(--gray-600);margin:0.4rem 0;">Daily tourist coaches, AC available</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--gray-100);">
+          <span style="font-size:0.75rem;color:var(--gray-400);">~7 hours</span>
+          <span style="font-family:var(--font-display);font-weight:700;color:var(--navy);">NPR 800+</span>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--navy);">Kathmandu &#8594; Chitwan</div>
+        <div style="font-size:0.8rem;color:var(--gray-600);margin:0.4rem 0;">Multiple morning departures</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--gray-100);">
+          <span style="font-size:0.75rem;color:var(--gray-400);">~5 hours</span>
+          <span style="font-family:var(--font-display);font-weight:700;color:var(--navy);">NPR 600+</span>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--navy);">Pokhara &#8594; Kathmandu</div>
+        <div style="font-size:0.8rem;color:var(--gray-600);margin:0.4rem 0;">Night &amp; day options available</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--gray-100);">
+          <span style="font-size:0.75rem;color:var(--gray-400);">~7 hours</span>
+          <span style="font-family:var(--font-display);font-weight:700;color:var(--navy);">NPR 800+</span>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--navy);">Kathmandu &#8594; Lumbini</div>
+        <div style="font-size:0.8rem;color:var(--gray-600);margin:0.4rem 0;">Overnight sleeper available</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--gray-100);">
+          <span style="font-size:0.75rem;color:var(--gray-400);">~8 hours</span>
+          <span style="font-family:var(--font-display);font-weight:700;color:var(--navy);">NPR 900+</span>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--navy);">Kathmandu &#8594; Biratnagar</div>
+        <div style="font-size:0.8rem;color:var(--gray-600);margin:0.4rem 0;">Express highway bus</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--gray-100);">
+          <span style="font-size:0.75rem;color:var(--gray-400);">~10 hours</span>
+          <span style="font-family:var(--font-display);font-weight:700;color:var(--navy);">NPR 1,100+</span>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--navy);">Pokhara &#8594; Chitwan</div>
+        <div style="font-size:0.8rem;color:var(--gray-600);margin:0.4rem 0;">Scenic route, tourist bus</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--gray-100);">
+          <span style="font-size:0.75rem;color:var(--gray-400);">~5 hours</span>
+          <span style="font-family:var(--font-display);font-weight:700;color:var(--navy);">NPR 700+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__logo">
+        <div class="footer__logo-mark">M</div>
+        <div class="footer__logo-text">MATS Nepal</div>
+      </div>
+      <p class="footer__tagline">Maitri Apartment and Travel Services Pvt. Ltd. &mdash; Making every Nepal journey smooth, reliable, and worth repeating.</p>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="Instagram">&#128247;</a>
+        <a href="https://www.tiktok.com/@matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="TikTok">&#127925;</a>
+        <a href="https://www.youtube.com/@matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="YouTube">&#9654;</a>
+        <a href="https://www.linkedin.com/company/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer__col-title">Services</div>
+      <ul class="footer__links">
+        <li><a href="flights.html">Flights</a></li>
+        <li><a href="bus.html">Transport</a></li>
+        <li><a href="stays.html">Stays</a></li>
+        <li><a href="tours.html">Tours</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__col-title">Destinations</div>
+      <ul class="footer__links">
+        <li><a href="tours.html">Everest Base Camp</a></li>
+        <li><a href="tours.html">Pokhara</a></li>
+        <li><a href="tours.html">Kathmandu Valley</a></li>
+        <li><a href="tours.html">Lumbini</a></li>
+        <li><a href="tours.html">Annapurna Circuit</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__col-title">Contact</div>
+      <div class="footer__contact-item"><span>&#128222;</span><span>+977 985-100-7025</span></div>
+      <div class="footer__contact-item"><span>&#9993;&#65039;</span><span>info@mats.com.np</span></div>
+      <div class="footer__contact-item"><span>&#128205;</span><span>Mitrapark-7, Kathmandu</span></div>
+      <div class="footer__contact-item"><span>&#128336;</span><span>Sun&ndash;Fri, 9 AM &ndash; 6 PM</span></div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__bottom-inner">
+      <div class="footer__copyright">
+        &copy; <span class="js-year"></span> <strong>MATS Nepal</strong> &mdash; Maitri Apartment and Travel Services Pvt. Ltd. Made with &#10084;&#65039; by <strong>NP</strong>.
+      </div>
+      <div class="footer__bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="tours.html">Book Now</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/9779823356668" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="whatsapp-float__icon">&#128172;</span>
+  <span>WhatsApp Us</span>
+</a>
+<script src="js/main.js"></script>
+</body></html>
