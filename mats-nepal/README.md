@@ -18,9 +18,4 @@ Premium travel website for MATS Nepal (Maitri Apartment and Travel Services Pvt.
 Open `index.html` in any modern browser. No build step required.
 All images load from Unsplash CDN. Internet connection required for fonts and images.
 
-## Contact
-- WhatsApp: +977 9823356668
-- Email: info@mats.com.np
-- Office: Mitrapark-7, Kathmandu, Nepal
 
-Made with love by NP.
