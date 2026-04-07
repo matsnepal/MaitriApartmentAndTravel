@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Flights — MATS Nepal</title>
+  <meta name="description" content="Book domestic and international flights to and from Nepal with MATS Nepal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a1628'/><text y='.9em' font-size='60' x='15' fill='%23c9a96e' font-family='Georgia'>M</text></svg>" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">M</div>
+      <div>
+        <div class="nav__logo-text">MATS Nepal</div>
+        <span class="nav__logo-sub">Travel &amp; Hospitality</span>
+      </div>
+    </a>
+    <ul class="nav__links">
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="bus.html">Transport</a></li>
+      <li><a href="stays.html">Stays</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="tours.html" class="nav__cta">Book Now</a></li>
+    </ul>
+    <div class="nav__hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="nav__mobile">
+  <button class="nav__mobile-close" aria-label="Close">&#x2715;</button>
+  <a href="flights.html">Flights</a>
+  <a href="bus.html">Transport</a>
+  <a href="stays.html">Stays</a>
+  <a href="tours.html">Tours</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="tours.html" style="color:var(--accent);">Book Now &#8594;</a>
+</div>
+
+<div class="page-hero" style="background-image:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);">
+  <div style="padding-top:2rem;">
+    <span class="label" style="display:block;margin-bottom:0.75rem;">&#9992;&#65039; Air Travel</span>
+    <h1 class="page-hero__title">Book Your Flight</h1>
+    <p class="page-hero__sub">Domestic &amp; international flights from Kathmandu &mdash; best fares guaranteed.</p>
+  </div>
+</div>
+
+<div class="booking-section">
+  <div class="booking-card">
+    <div class="booking-card__header">
+      <span class="booking-card__header-icon">&#9992;&#65039;</span>
+      <div>
+        <div class="booking-card__header-title">Flight Search</div>
+        <div class="booking-card__header-sub">Compare &amp; book the best fares</div>
+      </div>
+    </div>
+    <div class="booking-card__body">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="oneway">One Way</button>
+        <button class="tab-btn" data-tab="roundtrip">Round Trip</button>
+        <button class="tab-btn" data-tab="multicity">Multi-City</button>
+      </div>
+      <form class="booking-form">
+        <div id="oneway" class="tab-panel">
+          <div class="form-row">
+            <div class="form-group"><label>From</label><input type="text" placeholder="Kathmandu (KTM)" value="Kathmandu (KTM)" /></div>
+            <div class="form-group"><label>To</label><input type="text" placeholder="Destination" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Departure Date</label><input type="date" /></div>
+            <div class="form-group"><label>Passengers</label><select><option>1 Adult</option><option>2 Adults</option><option>3 Adults</option><option>4+ Adults</option></select></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Class</label><select><option>Economy</option><option>Business</option><option>First Class</option></select></div>
+            <div class="form-group"><label>Flight Type</label><select><option>Domestic</option><option>International</option></select></div>
+          </div>
+        </div>
+        <div id="roundtrip" class="tab-panel" style="display:none;">
+          <div class="form-row">
+            <div class="form-group"><label>From</label><input type="text" placeholder="Kathmandu (KTM)" value="Kathmandu (KTM)" /></div>
+            <div class="form-group"><label>To</label><input type="text" placeholder="Destination" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Departure Date</label><input type="date" /></div>
+            <div class="form-group"><label>Return Date</label><input type="date" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Passengers</label><select><option>1 Adult</option><option>2 Adults</option><option>3 Adults</option><option>4+ Adults</option></select></div>
+            <div class="form-group"><label>Class</label><select><option>Economy</option><option>Business</option><option>First Class</option></select></div>
+          </div>
+        </div>
+        <div id="multicity" class="tab-panel" style="display:none;">
+          <div class="form-row">
+            <div class="form-group"><label>City 1: From</label><input type="text" placeholder="Kathmandu (KTM)" /></div>
+            <div class="form-group"><label>City 1: To</label><input type="text" placeholder="Lukla (LUA)" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>City 1: Date</label><input type="date" /></div>
+            <div class="form-group"><label>Passengers</label><select><option>1 Adult</option><option>2 Adults</option><option>3 Adults</option></select></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>City 2: From</label><input type="text" placeholder="Lukla (LUA)" /></div>
+            <div class="form-group"><label>City 2: To</label><input type="text" placeholder="Pokhara (PKR)" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>City 2: Date</label><input type="date" /></div>
+            <div class="form-group"><label>Class</label><select><option>Economy</option><option>Business</option></select></div>
+          </div>
+        </div>
+        <div class="form-group" style="margin-top:0.5rem;">
+          <label>Special Requests (Optional)</label>
+          <input type="text" placeholder="e.g. wheelchair access, infant seat, dietary requirements..." />
+        </div>
+        <button type="submit" class="booking-submit">Search Available Flights</button>
+      </form>
+    </div>
+  </div>
+
+  <div style="max-width:900px;margin:3rem auto 0;">
+    <h2 style="font-family:var(--font-display);font-size:1.5rem;color:var(--navy);margin-bottom:1.5rem;">Popular Domestic Routes</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;">
+      <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.25rem;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow-sm);">
+        <div>
+          <div style="font-size:0.7rem;color:var(--accent);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">KTM → LUA</div>
+          <div style="font-family:var(--font-display);font-weight:600;color:var(--navy);margin-top:0.2rem;">Kathmandu → Lukla</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:0.7rem;color:var(--gray-400);">from</div>
+          <div style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);">NPR 8,500</div>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.25rem;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow-sm);">
+        <div>
+          <div style="font-size:0.7rem;color:var(--accent);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">KTM → PKR</div>
+          <div style="font-family:var(--font-display);font-weight:600;color:var(--navy);margin-top:0.2rem;">Kathmandu → Pokhara</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:0.7rem;color:var(--gray-400);">from</div>
+          <div style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);">NPR 4,200</div>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.25rem;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow-sm);">
+        <div>
+          <div style="font-size:0.7rem;color:var(--accent);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">KTM → BWA</div>
+          <div style="font-family:var(--font-display);font-weight:600;color:var(--navy);margin-top:0.2rem;">Kathmandu → Bhairahawa</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:0.7rem;color:var(--gray-400);">from</div>
+          <div style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);">NPR 5,100</div>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.25rem;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow-sm);">
+        <div>
+          <div style="font-size:0.7rem;color:var(--accent);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">KTM → BHR</div>
+          <div style="font-family:var(--font-display);font-weight:600;color:var(--navy);margin-top:0.2rem;">Kathmandu → Biratnagar</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:0.7rem;color:var(--gray-400);">from</div>
+          <div style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);">NPR 5,500</div>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.25rem;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow-sm);">
+        <div>
+          <div style="font-size:0.7rem;color:var(--accent);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">KTM → JMO</div>
+          <div style="font-family:var(--font-display);font-weight:600;color:var(--navy);margin-top:0.2rem;">Kathmandu → Jomsom</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:0.7rem;color:var(--gray-400);">from</div>
+          <div style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);">NPR 7,800</div>
+        </div>
+      </div><div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.25rem;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow-sm);">
+        <div>
+          <div style="font-size:0.7rem;color:var(--accent);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">KTM → JKR</div>
+          <div style="font-family:var(--font-display);font-weight:600;color:var(--navy);margin-top:0.2rem;">Kathmandu → Jumla</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:0.7rem;color:var(--gray-400);">from</div>
+          <div style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);">NPR 9,200</div>
+        </div>
+      </div>
+    </div>
+    <div style="background:var(--navy);border-radius:var(--radius-lg);padding:2rem;margin-top:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div style="font-family:var(--font-display);font-size:1.1rem;color:var(--white);font-weight:600;">Need help booking?</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.55);margin-top:0.25rem;">Our travel experts are ready to assist you.</div>
+      </div>
+      <a href="https://wa.me/9779823356668" style="display:inline-flex;align-items:center;gap:0.5rem;background:#25D366;color:white;padding:0.75rem 1.5rem;border-radius:100px;font-weight:600;font-size:0.875rem;text-decoration:none;" target="_blank" rel="noopener">&#128172; WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__logo">
+        <div class="footer__logo-mark">M</div>
+        <div class="footer__logo-text">MATS Nepal</div>
+      </div>
+      <p class="footer__tagline">Maitri Apartment and Travel Services Pvt. Ltd. &mdash; Making every Nepal journey smooth, reliable, and worth repeating.</p>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="Instagram">&#128247;</a>
+        <a href="https://www.tiktok.com/@matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="TikTok">&#127925;</a>
+        <a href="https://www.youtube.com/@matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="YouTube">&#9654;</a>
+        <a href="https://www.linkedin.com/company/matsnepal" class="footer__social" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer__col-title">Services</div>
+      <ul class="footer__links">
+        <li><a href="flights.html">Flights</a></li>
+        <li><a href="bus.html">Transport</a></li>
+        <li><a href="stays.html">Stays</a></li>
+        <li><a href="tours.html">Tours</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__col-title">Destinations</div>
+      <ul class="footer__links">
+        <li><a href="tours.html">Everest Base Camp</a></li>
+        <li><a href="tours.html">Pokhara</a></li>
+        <li><a href="tours.html">Kathmandu Valley</a></li>
+        <li><a href="tours.html">Lumbini</a></li>
+        <li><a href="tours.html">Annapurna Circuit</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__col-title">Contact</div>
+      <div class="footer__contact-item"><span>&#128222;</span><span>+977 985-100-7025</span></div>
+      <div class="footer__contact-item"><span>&#9993;&#65039;</span><span>info@mats.com.np</span></div>
+      <div class="footer__contact-item"><span>&#128205;</span><span>Mitrapark-7, Kathmandu</span></div>
+      <div class="footer__contact-item"><span>&#128336;</span><span>Sun&ndash;Fri, 9 AM &ndash; 6 PM</span></div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__bottom-inner">
+      <div class="footer__copyright">
+        &copy; <span class="js-year"></span> <strong>MATS Nepal</strong> &mdash; Maitri Apartment and Travel Services Pvt. Ltd. Made with &#10084;&#65039; by <strong>NP</strong>.
+      </div>
+      <div class="footer__bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="tours.html">Book Now</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/9779823356668" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="whatsapp-float__icon">&#128172;</span>
+  <span>WhatsApp Us</span>
+</a>
+<script src="js/main.js"></script>
+</body></html>
